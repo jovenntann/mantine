@@ -10,12 +10,12 @@ import {
     Group,
     Button,
   } from '@mantine/core';
-import classes from './AuthenticationTitle.module.css';
+import styles from './styles.module.css';
 
 export function AuthenticationTitle() {
     return (
         <Container size={420} my={40}>
-        <Title ta="center" className={classes.title}>
+        <Title ta="center" className={styles.title}>
             Welcome back!
         </Title>
         <Text c="dimmed" size="sm" ta="center" mt={5}>

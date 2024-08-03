@@ -1,10 +1,17 @@
-import { Cards } from "@/components/Index";
+import { HeroText, GroupStats, EmailBanner } from "@/components/Index";
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <main>
-      <div style={{ maxWidth: '400px', margin: '0 auto' }}>
-        <Cards />
+      <div className={styles.container}>
+        <HeroText />
+        <div className={styles.section}>
+          <GroupStats />
+        </div>
+        <div className={styles.section}>
+          <EmailBanner />
+        </div>
       </div>
     </main>
   );
